@@ -9,19 +9,16 @@
     <style>
 
         /*CSS RESETS*/
-
 body{
     background-color: #fff;
     line-height: 1.6;
-
 }
 
 h1 {
     margin-top: 0;
 }
 
-
-/*CSS START*/
+        /*CSS START*/
 
 .full-table {
     display: table;
@@ -107,14 +104,11 @@ h1 {
 </div>
 
 <script>
-    function date() {
-var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-var today = new Date();
-
-console.log(today.toLocaleDateString("en-US")); // 9/17/2016
+function date() {
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var today = new Date();
+    console.log(today.toLocaleDateString("en-US")); // 9/17/2016
 }
-    
-/* console.log(formatDate(new Date()));  // show current date-time in console */
 
 function clock() {
 var time = new Date();
@@ -141,8 +135,7 @@ document.getElementById('sec').innerHTML = seconds;
 // adds zero infront of single digit number
 function zeros(num) {
 if (num < 10) {
-    num = '0' + num
-};
+    num = '0' + num};
 return num;
 }
 
