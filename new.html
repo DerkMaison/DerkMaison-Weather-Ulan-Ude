@@ -109,9 +109,7 @@ h1 {
 <script>
     function date() {
 var today = new Date();
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-document.getElementById("demo").innerHTML = months[d.getMonth()];
-/* document.getElementById('date').innerHTML = today.toDateString(); */
+document.getElementById('date').innerHTML = today.toDateString();
 }
 
 
@@ -142,9 +140,9 @@ document.getElementById('sec').innerHTML = seconds;
 
 function twelveHour(hour) {
 if (hour > 12) {
-    return hour -= 12 
+    return hour -= 24 
 } else if (hour === 0) {
-    return hour = 12;
+    return hour = 24;
 } else {
     return hour
 }
