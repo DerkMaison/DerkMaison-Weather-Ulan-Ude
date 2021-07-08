@@ -40,7 +40,7 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #FFD700;
+    background: #DAA520;
     width: 85vw;
     color: #fff;
     display: inline-block;
@@ -109,8 +109,9 @@ h1 {
 
 <script>
     function date() {
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var today = new Date();
-document.getElementById('date').innerHTML = today.toLocaleDateString();
+document.getElementById('date').innerHTML = today.toLocaleDateString("ru", options);
 }
 
 
