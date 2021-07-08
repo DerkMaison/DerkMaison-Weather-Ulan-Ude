@@ -9,4 +9,27 @@ var month=new Array("января","февраля","марта","апреля",
 
 document.write(day[d.getDay()]+", " +d.getDate()+ " " + month[d.getMonth()]
 + " " + d.getFullYear() + " г.");
+  
+<script type="text/javascript">
+function startTime()
+{
+var tm=new Date();
+var h=tm.getHours();
+var m=tm.getMinutes();
+var s=tm.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('timer').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i < 10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+  
 //--></script>
