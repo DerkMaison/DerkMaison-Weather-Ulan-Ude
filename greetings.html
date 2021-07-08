@@ -39,15 +39,10 @@ body{
     
     var today = new Date();
     
-    var options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-};
-    
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = dayOfWeek+" " + today.getDate() + "." +(today.getMonth()+1) +'.'+today.getFullYear()  ;
+    if (dd < 10) dd = '0' + dd;
 
     var greet;
 
